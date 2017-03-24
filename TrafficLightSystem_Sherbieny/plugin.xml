@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///Systesh.ecore"
+            class="Systesh.SysteshPackage"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated model -->
+      <package
+            uri="http:///Systesh/Package1.ecore"
+            class="Systesh.Package1.Package1Package"
+            genModel="model/model.genmodel"/>
+   </extension>
+
+</plugin>

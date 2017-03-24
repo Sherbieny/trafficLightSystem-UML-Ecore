@@ -1,0 +1,34 @@
+/**
+ */
+package Systesh;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Timer</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see Systesh.SysteshPackage#getTimer()
+ * @model
+ * @generated
+ */
+public interface Timer extends EObject {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void Tick();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model
+	 * @generated
+	 */
+	void timer_reset();
+
+} // Timer

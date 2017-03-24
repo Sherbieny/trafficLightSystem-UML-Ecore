@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_uml:Behavior:method">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_J6QnQAZMEeeodtn_Ea6xsg"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Signal:signal">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/sherbieny_papyrus_1/model.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_NtlH4AZMEeeodtn_Ea6xsg"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_platform:/resource/sherbieny_papyrus_1/model.uml:uml:ConnectableElement:represents">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_J6QnQAZMEeeodtn_Ea6xsg"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_NtlH4AZMEeeodtn_Ea6xsg"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_J6QnQAZMEeeodtn_Ea6xsg"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+				<item value="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.customizationManager">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/sherbieny_papyrus_1/model.uml:uml:PartDecomposition:decomposedAs">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_platform:/resource/sherbieny_papyrus_1/model.uml:uml:Type:type">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Constraint:bodyCondition">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/sherbieny_papyrus_1/model.uml:uml:ConnectableElement:represents">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_iMkpsQZOEeeodtn_Ea6xsg"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_kBKz0wZOEeeodtn_Ea6xsg"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_L_NiwAZmEeeodtn_Ea6xsg"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_GRoeQAZNEeeodtn_Ea6xsg"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_qqDPgAZSEeeodtn_Ea6xsg"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_hdJbEAZSEeeodtn_Ea6xsg"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_h2TUMAZNEeeodtn_Ea6xsg"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_DO91IAZmEeeodtn_Ea6xsg"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/sherbieny_papyrus_1/model.uml:uml:Namespace:context">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_Akk00AZNEeeodtn_Ea6xsg"/>
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_GRkz4AZNEeeodtn_Ea6xsg"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history_container_platform:/resource/sherbieny_papyrus_1/model.uml:uml:Namespace:context">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_2NLBgAPuEee_u-Za88tlpw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Behavior:method">
+	</section>
+</section>
