@@ -43,12 +43,12 @@ public class ButtonBImpl extends MinimalEObjectImpl.Container implements ButtonB
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated not
 	 */
 	public void activate() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		ControllerImpl cont = new ControllerImpl();
+		cont.setButtonB_pressed(true);
+		cont.switch_lights_buttonB();
 	}
 
 	/**

@@ -78,10 +78,7 @@ public class CarLightImpl extends MinimalEObjectImpl.Container implements CarLig
 	public Lights getCar_current_light() {
 		return car_current_light;
 	}
-	
-	public void waiting (int seconds){
-		for(int i = 0; i < seconds; i++){}
-	}
+		
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -100,16 +97,21 @@ public class CarLightImpl extends MinimalEObjectImpl.Container implements CarLig
 	 * @generated not
 	 */
 	public void switch_car_light() {
+		ControllerImpl cont = new ControllerImpl();
 		switch (getCar_current_light()) {
 		case RED:
-			waiting(5);
+			cont.waiting(5);
 			setCar_current_light(Lights.YELLOW);
 		case YELLOW:
-			waiting(5);
+			cont.waiting(5);
 			setCar_current_light(Lights.GREEN);
+			cont.setCar_traffic_active(true); // deactivating the traffic 	
+			//cont.activate_car_traffic(); // start the car time counter				
 		case GREEN:
-			waiting(10);
+			cont.waiting(10);
 			setCar_current_light(Lights.RED);
+			cont.setCar_green_time(0); // reseting the car timer
+			cont.setCar_traffic_active(false); // deactivating the traffic 			
 		default:
 			setCar_current_light(Lights.RED);
 		}

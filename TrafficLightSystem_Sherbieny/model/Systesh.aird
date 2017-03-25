@@ -116,6 +116,15 @@
             <semanticElements xmi:type="ecore:EAttribute" href="Systesh.ecore#//Controller/ped_green_time"/>
           </cells>
         </lines>
+        <lines xmi:type="table:DLine" xmi:id="_zyVQIBC6EeeJjvvgsa59UQ" label="Time : Integer">
+          <target xmi:type="ecore:EAttribute" href="Systesh.ecore#//Controller/Time"/>
+          <semanticElements xmi:type="ecore:EAttribute" href="Systesh.ecore#//Controller/Time"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedLineMappings[name='Classes%20lines']/@ownedSubLines[name='Feature']"/>
+          <cells xmi:type="table:DCell" xmi:id="_zy8UIBC6EeeJjvvgsa59UQ" label="Time" column="_T949cAy4EeeGyu-yUgUDeQ">
+            <target xmi:type="ecore:EAttribute" href="Systesh.ecore#//Controller/Time"/>
+            <semanticElements xmi:type="ecore:EAttribute" href="Systesh.ecore#//Controller/Time"/>
+          </cells>
+        </lines>
         <semanticElements xmi:type="ecore:EClass" href="Systesh.ecore#//Controller"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedLineMappings[name='Classes%20lines']"/>
         <cells xmi:type="table:DCell" xmi:id="_T949YQy4EeeGyu-yUgUDeQ" label="Controller" column="_T949cAy4EeeGyu-yUgUDeQ">
@@ -125,7 +134,7 @@
       </lines>
       <lines xmi:type="table:DLine" xmi:id="_T949Ygy4EeeGyu-yUgUDeQ" label="PedLight">
         <target xmi:type="ecore:EClass" href="Systesh.ecore#//PedLight"/>
-        <lines xmi:type="table:DLine" xmi:id="_T949Ywy4EeeGyu-yUgUDeQ" label="ped_current_light : Integer">
+        <lines xmi:type="table:DLine" xmi:id="_T949Ywy4EeeGyu-yUgUDeQ" label="ped_current_light : Lights">
           <target xmi:type="ecore:EAttribute" href="Systesh.ecore#//PedLight/ped_current_light"/>
           <semanticElements xmi:type="ecore:EAttribute" href="Systesh.ecore#//PedLight/ped_current_light"/>
           <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedLineMappings[name='Classes%20lines']/@ownedSubLines[name='Feature']"/>
@@ -143,7 +152,7 @@
       </lines>
       <lines xmi:type="table:DLine" xmi:id="_T949Zgy4EeeGyu-yUgUDeQ" label="CarLight">
         <target xmi:type="ecore:EClass" href="Systesh.ecore#//CarLight"/>
-        <lines xmi:type="table:DLine" xmi:id="_T949Zwy4EeeGyu-yUgUDeQ" label="car_current_light : Integer">
+        <lines xmi:type="table:DLine" xmi:id="_T949Zwy4EeeGyu-yUgUDeQ" label="car_current_light : Lights">
           <target xmi:type="ecore:EAttribute" href="Systesh.ecore#//CarLight/car_current_light"/>
           <semanticElements xmi:type="ecore:EAttribute" href="Systesh.ecore#//CarLight/car_current_light"/>
           <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedLineMappings[name='Classes%20lines']/@ownedSubLines[name='Feature']"/>
@@ -161,15 +170,6 @@
       </lines>
       <lines xmi:type="table:DLine" xmi:id="_T949agy4EeeGyu-yUgUDeQ" label="Timer">
         <target xmi:type="ecore:EClass" href="Systesh.ecore#//Timer"/>
-        <lines xmi:type="table:DLine" xmi:id="_T949awy4EeeGyu-yUgUDeQ" label="Time : Integer">
-          <target xmi:type="ecore:EAttribute" href="Systesh.ecore#//Timer/Time"/>
-          <semanticElements xmi:type="ecore:EAttribute" href="Systesh.ecore#//Timer/Time"/>
-          <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedLineMappings[name='Classes%20lines']/@ownedSubLines[name='Feature']"/>
-          <cells xmi:type="table:DCell" xmi:id="_T949bAy4EeeGyu-yUgUDeQ" label="Time" column="_T949cAy4EeeGyu-yUgUDeQ">
-            <target xmi:type="ecore:EAttribute" href="Systesh.ecore#//Timer/Time"/>
-            <semanticElements xmi:type="ecore:EAttribute" href="Systesh.ecore#//Timer/Time"/>
-          </cells>
-        </lines>
         <semanticElements xmi:type="ecore:EClass" href="Systesh.ecore#//Timer"/>
         <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedLineMappings[name='Classes%20lines']"/>
         <cells xmi:type="table:DCell" xmi:id="_T949bQy4EeeGyu-yUgUDeQ" label="Timer" column="_T949cAy4EeeGyu-yUgUDeQ">
@@ -186,7 +186,26 @@
           <semanticElements xmi:type="ecore:EClass" href="Systesh.ecore#//ButtonB"/>
         </cells>
       </lines>
-      <columns xmi:type="table:DFeatureColumn" xmi:id="_T949cAy4EeeGyu-yUgUDeQ" label="Name" cells="_T94WQgy4EeeGyu-yUgUDeQ _T94WRgy4EeeGyu-yUgUDeQ _T94WRQy4EeeGyu-yUgUDeQ _T94WSAy4EeeGyu-yUgUDeQ _T949YQy4EeeGyu-yUgUDeQ _T949Ugy4EeeGyu-yUgUDeQ _T949VAy4EeeGyu-yUgUDeQ _T949Vgy4EeeGyu-yUgUDeQ _T949WAy4EeeGyu-yUgUDeQ _T949Wgy4EeeGyu-yUgUDeQ _T949XAy4EeeGyu-yUgUDeQ _T949Xgy4EeeGyu-yUgUDeQ _T949YAy4EeeGyu-yUgUDeQ _T949ZQy4EeeGyu-yUgUDeQ _T949ZAy4EeeGyu-yUgUDeQ _T949aQy4EeeGyu-yUgUDeQ _T949aAy4EeeGyu-yUgUDeQ _T949bQy4EeeGyu-yUgUDeQ _T949bAy4EeeGyu-yUgUDeQ _T949bwy4EeeGyu-yUgUDeQ" width="101" featureName="name">
+      <lines xmi:type="table:DLine" xmi:id="_zyfBIBC6EeeJjvvgsa59UQ" label="Package1">
+        <target xmi:type="ecore:EPackage" href="Systesh.ecore#//Package1"/>
+        <lines xmi:type="table:DLine" xmi:id="_zyhdYBC6EeeJjvvgsa59UQ" label="Scenario1">
+          <target xmi:type="ecore:EClass" href="Systesh.ecore#//Package1/Scenario1"/>
+          <semanticElements xmi:type="ecore:EClass" href="Systesh.ecore#//Package1/Scenario1"/>
+          <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedLineMappings[name='Classes%20lines']"/>
+          <cells xmi:type="table:DCell" xmi:id="_zy-JURC6EeeJjvvgsa59UQ" label="Scenario1" column="_T949cAy4EeeGyu-yUgUDeQ">
+            <target xmi:type="ecore:EClass" href="Systesh.ecore#//Package1/Scenario1"/>
+            <semanticElements xmi:type="ecore:EClass" href="Systesh.ecore#//Package1/Scenario1"/>
+          </cells>
+        </lines>
+        <semanticElements xmi:type="ecore:EPackage" href="Systesh.ecore#//Package1"/>
+        <originMapping xmi:type="description_1:LineMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedLineMappings[name='Package']"/>
+        <cells xmi:type="table:DCell" xmi:id="_zy-JUBC6EeeJjvvgsa59UQ" label="Package1" column="_T949cAy4EeeGyu-yUgUDeQ">
+          <target xmi:type="ecore:EPackage" href="Systesh.ecore#//Package1"/>
+          <semanticElements xmi:type="ecore:EPackage" href="Systesh.ecore#//Package1"/>
+        </cells>
+        <currentStyle xmi:type="table:DTableElementStyle" xmi:id="_zyg2UBC6EeeJjvvgsa59UQ" defaultBackgroundStyle="true" backgroundColor="255,245,181"/>
+      </lines>
+      <columns xmi:type="table:DFeatureColumn" xmi:id="_T949cAy4EeeGyu-yUgUDeQ" label="Name" cells="_T94WQgy4EeeGyu-yUgUDeQ _T94WRgy4EeeGyu-yUgUDeQ _T94WRQy4EeeGyu-yUgUDeQ _T94WSAy4EeeGyu-yUgUDeQ _T949YQy4EeeGyu-yUgUDeQ _T949Ugy4EeeGyu-yUgUDeQ _T949VAy4EeeGyu-yUgUDeQ _T949Vgy4EeeGyu-yUgUDeQ _T949WAy4EeeGyu-yUgUDeQ _T949Wgy4EeeGyu-yUgUDeQ _T949XAy4EeeGyu-yUgUDeQ _T949Xgy4EeeGyu-yUgUDeQ _T949YAy4EeeGyu-yUgUDeQ _T949ZQy4EeeGyu-yUgUDeQ _T949ZAy4EeeGyu-yUgUDeQ _T949aQy4EeeGyu-yUgUDeQ _T949aAy4EeeGyu-yUgUDeQ _T949bQy4EeeGyu-yUgUDeQ _T949bwy4EeeGyu-yUgUDeQ _zy8UIBC6EeeJjvvgsa59UQ _zy-JUBC6EeeJjvvgsa59UQ _zy-JURC6EeeJjvvgsa59UQ" width="101" featureName="name">
         <originMapping xmi:type="description_1:FeatureColumnMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']/@ownedColumnMappings[name='Name']"/>
       </columns>
       <description xmi:type="description_1:EditionTableDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Classes']"/>

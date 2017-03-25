@@ -191,7 +191,7 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int TIME_EDEFAULT = 0;
+	protected static int TIME_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getTime() <em>Time</em>}' attribute.
@@ -330,6 +330,24 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 			eNotify(new ENotificationImpl(this, Notification.SET, SysteshPackage.CONTROLLER__BUTTON_BPRESSED, oldButtonB_pressed, buttonB_pressed));
 	}
 
+	
+	public void waiting (int seconds){	
+		int timestamp = time;
+		for(int i = timestamp; i < timestamp + seconds; i++){}
+	}
+	
+	/*
+	 * Cannot do it like this, its an infinite loop 
+	public void activate_car_traffic() {
+		while(true){car_green_time++;}
+
+	}
+	public void activate_ped_traffic() {
+		while(true){ped_green_time++;}
+
+	}
+	*/
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -387,23 +405,46 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	 * @generated not
 	 */
 	public void switch_lights_buttonA() {		
-		for (int i = 0; i < 5; i++){}
-//		this.timer_reset();
-		for (CarLight cl : carlight) {
-			cl.switch_car_light(); 
+		waiting(5);
+		if(isButtonA_pressed() && isCar_traffic_active()){
+			for (CarLight cl : carlight) {
+					cl.switch_car_light(); 
+				}
+			//car_green_time = 0;
+			for (PedLight pl : pedlight) {
+				pl.switch_ped_light();
+			}		
 		}
-		
+		setButtonA_pressed(false);
+		//all below are done in their respective classes
+		//setCar_traffic_active(false);
+		//setCar_green_time(0);
+		//setPed_traffic_active(true);
+		//activate_ped_traffic();
 	}
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated not
 	 */
 	public void switch_lights_buttonB() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		waiting(5);
+		if(isButtonB_pressed() && isCar_traffic_active()){
+			for (CarLight cl : carlight) {
+					cl.switch_car_light(); 
+				}
+			//car_green_time = 0;
+			for (PedLight pl : pedlight) {
+				pl.switch_ped_light();
+			}		
+		}
+		setButtonB_pressed(false);
+		//all below are done in their respective classes
+		//setCar_traffic_active(false);
+		//setCar_green_time(0);
+		//setPed_traffic_active(true);
+		//activate_ped_traffic();
 	}
 
 	/**
@@ -412,9 +453,8 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	 * @generated
 	 */
 	public void timer_reset() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		TimerImpl tim = new TimerImpl();
+		tim.timer_reset();
 	}
 
 	/**

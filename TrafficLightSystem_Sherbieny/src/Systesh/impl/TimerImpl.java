@@ -43,14 +43,18 @@ public class TimerImpl extends MinimalEObjectImpl.Container implements Timer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated not 	
 	 */
+	/*
+	 * I don't know how to implement a timer
+	 * */
 	public void Tick() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		//ControllerImpl cont = new ControllerImpl();
+		//while(true){
+		//	cont.time++;
+		//}
 	}
-
+	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
