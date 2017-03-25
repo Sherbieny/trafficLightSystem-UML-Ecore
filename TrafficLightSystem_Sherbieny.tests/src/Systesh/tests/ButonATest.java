@@ -2,6 +2,8 @@
  */
 package Systesh.tests;
 
+import java.awt.datatransfer.SystemFlavorMap;
+
 import Systesh.ButonA;
 import Systesh.SysteshFactory;
 
@@ -97,12 +99,11 @@ public class ButonATest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.ButonA#activate()
-	 * @generated
+	 * @generated not
 	 */
 	public void testActivate() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createButonA());
+		getFixture().activate();
 	}
 
 } //ButonATest

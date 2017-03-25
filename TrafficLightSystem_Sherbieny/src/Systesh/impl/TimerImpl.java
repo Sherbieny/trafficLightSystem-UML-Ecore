@@ -58,12 +58,11 @@ public class TimerImpl extends MinimalEObjectImpl.Container implements Timer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated not
 	 */
 	public void timer_reset() {
-		// TODO: implement this method
-		// Ensure that you remove @generated or mark it @generated NOT
-		throw new UnsupportedOperationException();
+		ControllerImpl cont = new ControllerImpl();
+		cont.time = 0;
 	}
 
 	/**

@@ -97,12 +97,11 @@ public class CarLightTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.CarLight#switch_car_light()
-	 * @generated
+	 * @generated not
 	 */
 	public void testSwitch_car_light() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createCarLight());
+		getFixture().switch_car_light();
 	}
 
 } //CarLightTest

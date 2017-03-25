@@ -99,12 +99,11 @@ public class ControllerTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.Controller#switch_lights_buttonA()
-	 * @generated
+	 * @generated not
 	 */
 	public void testSwitch_lights_buttonA() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createController());
+		getFixture().switch_lights_buttonA();
 	}
 
 	/**
@@ -112,12 +111,11 @@ public class ControllerTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.Controller#switch_lights_buttonB()
-	 * @generated
+	 * @generated not
 	 */
 	public void testSwitch_lights_buttonB() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createController());
+		getFixture().switch_lights_buttonB();
 	}
 
 	/**
@@ -125,12 +123,11 @@ public class ControllerTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.Controller#timer_reset()
-	 * @generated
+	 * @generated not
 	 */
 	public void testTimer_reset() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createController());
+		getFixture().timer_reset();
 	}
 
 } //ControllerTest

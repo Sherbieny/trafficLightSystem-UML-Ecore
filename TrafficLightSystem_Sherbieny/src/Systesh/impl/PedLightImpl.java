@@ -98,6 +98,7 @@ public class PedLightImpl extends MinimalEObjectImpl.Container implements PedLig
 	 * @generated not
 	 */
 	public void switch_ped_light() {
+		
 		ControllerImpl cont = new ControllerImpl();
 		switch (getPed_current_light()) {
 		case RED:

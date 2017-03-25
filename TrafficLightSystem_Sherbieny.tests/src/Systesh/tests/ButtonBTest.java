@@ -97,12 +97,11 @@ public class ButtonBTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.ButtonB#activate()
-	 * @generated
+	 * @generated not
 	 */
 	public void testActivate() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createButtonB());
+		getFixture().activate();
 	}
 
 } //ButtonBTest

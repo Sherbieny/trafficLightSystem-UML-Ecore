@@ -1,0 +1,208 @@
+/**
+ */
+package Systesh.impl;
+
+import Systesh.Lights;
+import Systesh.PedLight;
+import Systesh.SysteshPackage;
+
+import java.lang.reflect.InvocationTargetException;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Ped Light</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link Systesh.impl.PedLightImpl#getPed_current_light <em>Ped current light</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class PedLightImpl extends MinimalEObjectImpl.Container implements PedLight {
+	/**
+	 * The default value of the '{@link #getPed_current_light() <em>Ped current light</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPed_current_light()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final Lights PED_CURRENT_LIGHT_EDEFAULT = Lights.RED;
+
+	/**
+	 * The cached value of the '{@link #getPed_current_light() <em>Ped current light</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPed_current_light()
+	 * @generated
+	 * @ordered
+	 */
+	protected Lights ped_current_light = PED_CURRENT_LIGHT_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PedLightImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return SysteshPackage.Literals.PED_LIGHT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Lights getPed_current_light() {
+		return ped_current_light;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPed_current_light(Lights newPed_current_light) {
+		Lights oldPed_current_light = ped_current_light;
+		ped_current_light = newPed_current_light == null ? PED_CURRENT_LIGHT_EDEFAULT : newPed_current_light;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, SysteshPackage.PED_LIGHT__PED_CURRENT_LIGHT, oldPed_current_light, ped_current_light));
+	}
+
+	
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated not
+	 */
+	public void switch_ped_light() {
+		ControllerImpl cont = new ControllerImpl();
+		switch (getPed_current_light()) {
+		case RED:
+			cont.waiting(5);
+			setPed_current_light(Lights.GREEN);		
+			cont.setPed_traffic_active(true); // activating ped traffic
+			//cont.activate_ped_traffic(); // starting ped counter
+		case GREEN:
+			cont.waiting(10);
+			setPed_current_light(Lights.RED);
+			cont.setPed_green_time(0); // reseting the car timer
+			cont.setPed_traffic_active(false); // deactivating the traffic 			
+		default:
+			cont.waiting(10);
+			setPed_current_light(Lights.RED);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case SysteshPackage.PED_LIGHT__PED_CURRENT_LIGHT:
+				return getPed_current_light();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case SysteshPackage.PED_LIGHT__PED_CURRENT_LIGHT:
+				setPed_current_light((Lights)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case SysteshPackage.PED_LIGHT__PED_CURRENT_LIGHT:
+				setPed_current_light(PED_CURRENT_LIGHT_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case SysteshPackage.PED_LIGHT__PED_CURRENT_LIGHT:
+				return ped_current_light != PED_CURRENT_LIGHT_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case SysteshPackage.PED_LIGHT___SWITCH_PED_LIGHT:
+				switch_ped_light();
+				return null;
+		}
+		return super.eInvoke(operationID, arguments);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (ped_current_light: ");
+		result.append(ped_current_light);
+		result.append(')');
+		return result.toString();
+	}
+
+} //PedLightImpl

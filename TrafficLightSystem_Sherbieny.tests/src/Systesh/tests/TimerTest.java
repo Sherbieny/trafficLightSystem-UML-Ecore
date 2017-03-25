@@ -111,12 +111,11 @@ public class TimerTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.Timer#timer_reset()
-	 * @generated
+	 * @generated not
 	 */
 	public void testTimer_reset() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createTimer());
+		getFixture().timer_reset();
 	}
 
 } //TimerTest

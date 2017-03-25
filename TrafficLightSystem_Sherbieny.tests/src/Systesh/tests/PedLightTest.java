@@ -97,12 +97,11 @@ public class PedLightTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.PedLight#switch_ped_light()
-	 * @generated
+	 * @generated not
 	 */
 	public void testSwitch_ped_light() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createPedLight());
+		getFixture().switch_ped_light();
 	}
 
 } //PedLightTest
