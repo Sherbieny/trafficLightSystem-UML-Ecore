@@ -4,5 +4,10 @@
 <fullyQualifiedTypeName name="Systesh.PedLight"/>
 <fullyQualifiedTypeName name="Systesh.Controller"/>
 <fullyQualifiedTypeName name="Systesh.impl.TimerImpl"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.awt.datatransfer.SystemFlavorMap"/>
+<fullyQualifiedTypeName name="Systesh.ButonA"/>
+<fullyQualifiedTypeName name="Systesh.tests.ButonATest"/>
 <fullyQualifiedTypeName name="Systesh.impl.ControllerImpl"/>
+<fullyQualifiedTypeName name="Systesh.SysteshFactory"/>
 </qualifiedTypeNameHistroy>

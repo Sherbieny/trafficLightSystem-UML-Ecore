@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PedLightTest" project="TrafficLightSystem_Sherbieny.tests" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="Systesh.tests.PedLightTest" time="0.23">
-    <testcase name="testSwitch_ped_light" classname="Systesh.tests.PedLightTest" time="0.23"/>
-  </testsuite>
-</testrun>

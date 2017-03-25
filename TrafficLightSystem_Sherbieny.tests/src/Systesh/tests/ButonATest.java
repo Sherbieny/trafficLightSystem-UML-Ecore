@@ -2,8 +2,6 @@
  */
 package Systesh.tests;
 
-import java.awt.datatransfer.SystemFlavorMap;
-
 import Systesh.ButonA;
 import Systesh.SysteshFactory;
 
