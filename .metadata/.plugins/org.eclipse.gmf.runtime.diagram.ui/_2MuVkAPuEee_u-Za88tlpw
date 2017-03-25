@@ -1,4 +1,4 @@
-#Thu Mar 23 09:07:47 EET 2017
+#Sat Mar 25 13:38:32 EET 2017
 viewport.x=0
 zoom=1.0
 print.margin.right=0.5
@@ -16,4 +16,4 @@ rulergrid.gridlinestyle=6
 rulergrid.gridlevel=false
 print.margin.top=0.5
 print.usePortrait=true
-viewport.y=55
+viewport.y=0
