@@ -101,9 +101,8 @@ public class TimerTest extends TestCase {
 	 * @generated
 	 */
 	public void testTick() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		setFixture(SysteshFactory.eINSTANCE.createTimer());
+		getFixture().Tick();
 	}
 
 	/**

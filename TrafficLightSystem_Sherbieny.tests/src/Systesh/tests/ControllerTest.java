@@ -102,6 +102,12 @@ public class ControllerTest extends TestCase {
 	 * @generated not
 	 */
 	public void testSwitch_lights_buttonA() {
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		setFixture(SysteshFactory.eINSTANCE.createController());
 		getFixture().switch_lights_buttonA();
 	}
@@ -114,6 +120,12 @@ public class ControllerTest extends TestCase {
 	 * @generated not
 	 */
 	public void testSwitch_lights_buttonB() {
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		setFixture(SysteshFactory.eINSTANCE.createController());
 		getFixture().switch_lights_buttonB();
 	}

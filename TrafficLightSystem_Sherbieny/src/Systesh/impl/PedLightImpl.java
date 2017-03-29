@@ -102,17 +102,17 @@ public class PedLightImpl extends MinimalEObjectImpl.Container implements PedLig
 		ControllerImpl cont = new ControllerImpl();
 		switch (getPed_current_light()) {
 		case RED:
-			cont.waiting(5);
+		//	cont.waiting(5);
 			setPed_current_light(Lights.GREEN);		
 			cont.setPed_traffic_active(true); // activating ped traffic
-			//cont.activate_ped_traffic(); // starting ped counter
+		//	cont.activate_ped_traffic(); // starting ped counter
 		case GREEN:
-			cont.waiting(10);
+		//	cont.waiting(10);
 			setPed_current_light(Lights.RED);
 			cont.setPed_green_time(0); // reseting the car timer
 			cont.setPed_traffic_active(false); // deactivating the traffic 			
 		default:
-			cont.waiting(10);
+		//	cont.waiting(10);
 			setPed_current_light(Lights.RED);
 		}
 	}

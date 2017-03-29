@@ -331,10 +331,10 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	}
 
 	
-	public void waiting (int seconds){	
+	/*public void waiting (int seconds){	
 		int timestamp = time;
 		for(int i = timestamp; i < timestamp + seconds; i++){}
-	}
+	}*/
 	
 	/*
 	 * Cannot do it like this, its an infinite loop 
@@ -405,7 +405,7 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	 * @generated not
 	 */
 	public void switch_lights_buttonA() {		
-		waiting(5);
+		//waiting(5);		
 		if(isButtonA_pressed() && isCar_traffic_active()){
 			for (CarLight cl : carlight) {
 					cl.switch_car_light(); 
@@ -429,7 +429,7 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	 * @generated not
 	 */
 	public void switch_lights_buttonB() {
-		waiting(5);
+	//	waiting(5);
 		if(isButtonB_pressed() && isCar_traffic_active()){
 			for (CarLight cl : carlight) {
 					cl.switch_car_light(); 

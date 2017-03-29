@@ -10,4 +10,5 @@
 <fullyQualifiedTypeName name="Systesh.tests.ButonATest"/>
 <fullyQualifiedTypeName name="Systesh.impl.ControllerImpl"/>
 <fullyQualifiedTypeName name="Systesh.SysteshFactory"/>
+<fullyQualifiedTypeName name="Systesh.CarLight"/>
 </qualifiedTypeNameHistroy>
