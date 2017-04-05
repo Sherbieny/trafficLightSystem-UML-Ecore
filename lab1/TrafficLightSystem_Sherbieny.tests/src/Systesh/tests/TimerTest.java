@@ -101,8 +101,13 @@ public class TimerTest extends TestCase {
 	 * @generated
 	 */
 	public void testTick() {
-		setFixture(SysteshFactory.eINSTANCE.createTimer());
-		getFixture().tick();
+		int x = getFixture().tick();
+		int y = getFixture().tick();
+		
+		if(x == y){
+			fail();
+		}
+		
 	}
 
 	/**
