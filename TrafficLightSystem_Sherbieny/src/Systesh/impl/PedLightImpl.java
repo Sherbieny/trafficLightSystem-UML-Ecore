@@ -114,6 +114,7 @@ public class PedLightImpl extends MinimalEObjectImpl.Container implements PedLig
 		default:
 		//	cont.waiting(10);
 			setPed_current_light(Lights.RED);
+			cont.setPed_traffic_active(false);
 		}
 	}
 

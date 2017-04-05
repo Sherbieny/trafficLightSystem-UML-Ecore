@@ -114,6 +114,7 @@ public class CarLightImpl extends MinimalEObjectImpl.Container implements CarLig
 			cont.setCar_traffic_active(false); // deactivating the traffic 			
 		default:
 			setCar_current_light(Lights.RED);
+			cont.setCar_traffic_active(false);
 		}
 	}
 

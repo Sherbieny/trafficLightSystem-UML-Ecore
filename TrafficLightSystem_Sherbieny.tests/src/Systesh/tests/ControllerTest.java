@@ -2,13 +2,17 @@
  */
 package Systesh.tests;
 
+import java.util.concurrent.locks.StampedLock;
+
+import javax.sound.midi.SysexMessage;
+
 import org.omg.PortableInterceptor.SUCCESSFUL;
 
 import Systesh.CarLight;
 import Systesh.Controller;
 import Systesh.PedLight;
 import Systesh.SysteshFactory;
-
+import Systesh.Timer;
 import junit.framework.TestCase;
 
 import junit.textui.TestRunner;
@@ -85,8 +89,8 @@ public class ControllerTest extends TestCase {
 	@Override
 	protected void setUp() throws Exception {
 		setFixture(SysteshFactory.eINSTANCE.createController());
-		//getFixture().setCar_traffic_active(true);
-		//getFixture().setPed_traffic_active(false);
+		getFixture().setCar_traffic_active(true);
+		getFixture().setPed_traffic_active(false);
 		getFixture().timer_reset();
 		
 		CarLight cl1 = SysteshFactory.eINSTANCE.createCarLight();
@@ -97,7 +101,12 @@ public class ControllerTest extends TestCase {
 		PedLight pl1 = SysteshFactory.eINSTANCE.createPedLight();
 		PedLight pl2 = SysteshFactory.eINSTANCE.createPedLight();
 		getFixture().getPedlight().add(pl1);
-		getFixture().getPedlight().add(pl2);			
+		getFixture().getPedlight().add(pl2);		
+		
+		
+		
+		//setFixture(SysteshFactory.eINSTANCE.createTimer());
+		
 		
 	}
 
@@ -120,15 +129,20 @@ public class ControllerTest extends TestCase {
 	 * @generated not
 	 */
 	public void testSwitch_lights_buttonA() {
-		try {
-			Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
+		Timer t = SysteshFactory.eINSTANCE.createTimer();
+		
+		int start_time = t.tick();
+		int current_time;		
+		
+		current_time = t.tick();
+		current_time = t.tick();
+		current_time = t.tick();
+		current_time = t.tick();
 		getFixture().switch_lights_buttonA();
-		if(getFixture().isCar_traffic_active() || !getFixture().isPed_traffic_active()){
+		
+		//getFixture().isCar_traffic_active() || !getFixture().isPed_traffic_active() ||
+		if(getFixture().isCar_traffic_active() ||current_time == start_time){
 			fail();
 		}
 		
@@ -142,13 +156,21 @@ public class ControllerTest extends TestCase {
 	 * @generated not
 	 */
 	public void testSwitch_lights_buttonB() {
-		try {
-			Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Timer t = SysteshFactory.eINSTANCE.createTimer();
+		
+		int start_time = t.tick();
+		int current_time;
+		
+		
+		current_time = t.tick();
+		current_time = t.tick();
+		current_time = t.tick();
+		current_time = t.tick();
 		getFixture().switch_lights_buttonB();
+		
+		if(getFixture().isCar_traffic_active() ||current_time == start_time){
+			fail();
+		}
 	}
 
 	/**

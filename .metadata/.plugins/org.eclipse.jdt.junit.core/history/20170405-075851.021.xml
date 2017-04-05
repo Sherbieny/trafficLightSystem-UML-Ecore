@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ControllerTest" project="TrafficLightSystem_Sherbieny.tests" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="Systesh.tests.ControllerTest" time="4.26">
+    <testcase name="testSwitch_lights_buttonA" classname="Systesh.tests.ControllerTest" time="0.253"/>
+    <testcase name="testSwitch_lights_buttonB" classname="Systesh.tests.ControllerTest" time="4.003"/>
+    <testcase name="testTimer_reset" classname="Systesh.tests.ControllerTest" time="0.004"/>
+  </testsuite>
+</testrun>

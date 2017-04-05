@@ -18,10 +18,11 @@ public interface Timer extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @return 
 	 * @model
 	 * @generated
 	 */
-	void Tick();
+	int tick();
 
 	/**
 	 * <!-- begin-user-doc -->

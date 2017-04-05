@@ -48,9 +48,10 @@ public class TimerImpl extends MinimalEObjectImpl.Container implements Timer {
 	/*
 	 * I don't know how to implement a timer
 	 * */
-	public void Tick() {
-		ControllerImpl cont = new ControllerImpl();
-		cont.time += 1;
+	public int tick_count = 0;
+	public int tick() {
+		tick_count += 1;
+		return tick_count;
 	}
 	
 	/**
@@ -66,13 +67,13 @@ public class TimerImpl extends MinimalEObjectImpl.Container implements Timer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
+	 * @generated not
 	 */
 	@Override
 	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
 		switch (operationID) {
 			case SysteshPackage.TIMER___TICK:
-				Tick();
+				tick();
 				return null;
 			case SysteshPackage.TIMER___TIMER_RESET:
 				timer_reset();

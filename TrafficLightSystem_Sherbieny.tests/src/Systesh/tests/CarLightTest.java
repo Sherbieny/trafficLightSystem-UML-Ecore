@@ -3,6 +3,7 @@
 package Systesh.tests;
 
 import Systesh.CarLight;
+import Systesh.Controller;
 import Systesh.Lights;
 import Systesh.SysteshFactory;
 
@@ -101,11 +102,14 @@ public class CarLightTest extends TestCase {
 	 * @see Systesh.CarLight#switch_car_light()
 	 * @generated not
 	 */
-	public void testSwitch_car_light() {		
+	public void testSwitch_car_light() {
+		
 		getFixture().switch_car_light();
-		if (getFixture().getCar_current_light() == Lights.GREEN){
+		
+		if (getFixture().getCar_current_light() == Lights.GREEN || getFixture().getCar_current_light() == Lights.YELLOW){
 			fail();
-		}
+		}		
+		
 	}
 
 } //CarLightTest

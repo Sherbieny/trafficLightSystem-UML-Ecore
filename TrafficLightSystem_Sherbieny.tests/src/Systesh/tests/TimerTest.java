@@ -102,7 +102,7 @@ public class TimerTest extends TestCase {
 	 */
 	public void testTick() {
 		setFixture(SysteshFactory.eINSTANCE.createTimer());
-		getFixture().Tick();
+		getFixture().tick();
 	}
 
 	/**
