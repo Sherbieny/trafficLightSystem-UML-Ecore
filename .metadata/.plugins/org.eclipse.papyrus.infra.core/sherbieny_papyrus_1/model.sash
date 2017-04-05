@@ -2,7 +2,7 @@
 <di:SashWindowsMngr xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:di="http://www.eclipse.org/papyrus/0.7.0/sashdi">
   <sashModel currentSelection="//@sashModel/@windows.0/@children.0" restoreActivePage="true">
     <windows>
-      <children xsi:type="di:TabFolder" currentSelection="//@sashModel/@windows.0/@children.0/@children.0">
+      <children xsi:type="di:TabFolder" currentSelection="//@sashModel/@windows.0/@children.0/@children.4">
         <children>
           <emfPageIdentifier href="platform:/resource/sherbieny_papyrus_1/model.notation#_2MuVkAPuEee_u-Za88tlpw"/>
         </children>
@@ -14,6 +14,9 @@
         </children>
         <children>
           <emfPageIdentifier href="platform:/resource/sherbieny_papyrus_1/model.notation#_2NntcAPuEee_u-Za88tlpw"/>
+        </children>
+        <children>
+          <emfPageIdentifier href="platform:/resource/sherbieny_papyrus_1/model.notation#_SskVYBR5Eeev0OZ8I3SnvQ"/>
         </children>
       </children>
     </windows>

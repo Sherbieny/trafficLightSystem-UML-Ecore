@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="Systesh.Lights"/>
-<fullyQualifiedTypeName name="Systesh.PedLight"/>
 <fullyQualifiedTypeName name="Systesh.Controller"/>
 <fullyQualifiedTypeName name="Systesh.impl.TimerImpl"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
@@ -9,6 +8,10 @@
 <fullyQualifiedTypeName name="Systesh.ButonA"/>
 <fullyQualifiedTypeName name="Systesh.tests.ButonATest"/>
 <fullyQualifiedTypeName name="Systesh.impl.ControllerImpl"/>
+<fullyQualifiedTypeName name="Systesh.tests.PedLightTest"/>
+<fullyQualifiedTypeName name="Systesh.PedLight"/>
 <fullyQualifiedTypeName name="Systesh.SysteshFactory"/>
+<fullyQualifiedTypeName name="Systesh.tests.TimerTest"/>
 <fullyQualifiedTypeName name="Systesh.CarLight"/>
+<fullyQualifiedTypeName name="org.omg.PortableInterceptor.SUCCESSFUL"/>
 </qualifiedTypeNameHistroy>

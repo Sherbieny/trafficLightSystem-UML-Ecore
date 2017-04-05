@@ -7,6 +7,8 @@
 			</list>
 		</section>
 	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/sherbieny_papyrus_1/model.uml:uml:Interaction:refersTo">
+	</section>
 	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Signal:signal">
 	</section>
 	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/sherbieny_papyrus_1/model.uml:uml:Type:type">
@@ -45,13 +47,15 @@
 	</section>
 	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Constraint:bodyCondition">
 	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Behavior:behavior">
+	</section>
 	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/sherbieny_papyrus_1/model.uml:uml:ConnectableElement:represents">
 		<section name="History">
 			<list key="PreviousSelection">
+				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_HgSbAAZTEeeodtn_Ea6xsg"/>
 				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_iMkpsQZOEeeodtn_Ea6xsg"/>
 				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_kBKz0wZOEeeodtn_Ea6xsg"/>
 				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_L_NiwAZmEeeodtn_Ea6xsg"/>
-				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_GRoeQAZNEeeodtn_Ea6xsg"/>
 				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_qqDPgAZSEeeodtn_Ea6xsg"/>
 				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_hdJbEAZSEeeodtn_Ea6xsg"/>
 				<item value="platform:/resource/sherbieny_papyrus_1/model.uml#_h2TUMAZNEeeodtn_Ea6xsg"/>

@@ -49,10 +49,8 @@ public class TimerImpl extends MinimalEObjectImpl.Container implements Timer {
 	 * I don't know how to implement a timer
 	 * */
 	public void Tick() {
-		//ControllerImpl cont = new ControllerImpl();
-		//while(true){
-		//	cont.time++;
-		//}
+		ControllerImpl cont = new ControllerImpl();
+		cont.time += 1;
 	}
 	
 	/**

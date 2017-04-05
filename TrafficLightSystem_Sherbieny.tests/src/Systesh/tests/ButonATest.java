@@ -78,7 +78,7 @@ public class ButonATest extends TestCase {
 	 */
 	@Override
 	protected void setUp() throws Exception {
-		setFixture(SysteshFactory.eINSTANCE.createButonA());
+		setFixture(SysteshFactory.eINSTANCE.createButonA());		
 	}
 
 	/**
@@ -99,8 +99,7 @@ public class ButonATest extends TestCase {
 	 * @see Systesh.ButonA#activate()
 	 * @generated not
 	 */
-	public void testActivate() {
-		setFixture(SysteshFactory.eINSTANCE.createButonA());
+	public void testActivate() {		
 		getFixture().activate();
 	}
 

@@ -407,6 +407,7 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	public void switch_lights_buttonA() {		
 		//waiting(5);		
 		if(isButtonA_pressed() && isCar_traffic_active()){
+			
 			for (CarLight cl : carlight) {
 					cl.switch_car_light(); 
 				}
