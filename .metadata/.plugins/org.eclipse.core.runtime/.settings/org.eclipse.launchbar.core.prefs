@@ -1,0 +1,7 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:CarLightTest,org.eclipse.launchbar.core.descriptorType.default\:CarLightTest.testSwitch_car_light,org.eclipse.launchbar.core.descriptorType.default\:PedLightTest,org.eclipse.launchbar.core.descriptorType.default\:PedLightTest.testSwitch_ped_light,org.eclipse.launchbar.core.descriptorType.default\:SysteshTests,org.eclipse.launchbar.core.descriptorType.default\:ButonATest.testActivate,org.eclipse.launchbar.core.descriptorType.default\:ControllerTest,org.eclipse.launchbar.core.descriptorType.default\:ButonATest,org.eclipse.launchbar.core.descriptorType.default\:TimerTest,org.eclipse.launchbar.core.descriptorType.default\:ModelAllTests
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:ButonATest/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:ButonATest/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:ControllerTest/activeLaunchMode=run

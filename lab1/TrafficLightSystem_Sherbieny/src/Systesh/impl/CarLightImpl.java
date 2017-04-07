@@ -39,7 +39,7 @@ public class CarLightImpl extends MinimalEObjectImpl.Container implements CarLig
 	 * @generated
 	 * @ordered
 	 */
-	protected static final Lights CAR_CURRENT_LIGHT_EDEFAULT = Lights.RED;
+	protected static final Lights CAR_CURRENT_LIGHT_EDEFAULT = Lights.GREEN;
 
 	/**
 	 * The cached value of the '{@link #getCar_current_light() <em>Car current light</em>}' attribute.
@@ -102,16 +102,19 @@ public class CarLightImpl extends MinimalEObjectImpl.Container implements CarLig
 		case RED:
 			//cont.waiting(5);
 			setCar_current_light(Lights.YELLOW);
+			break;
 		case YELLOW:
 		//	cont.waiting(5);
 			setCar_current_light(Lights.GREEN);
 			cont.setCar_traffic_active(true); // deactivating the traffic 	
-			//cont.activate_car_traffic(); // start the car time counter				
+			//cont.activate_car_traffic(); // start the car time counter
+			break;
 		case GREEN:
 		//	cont.waiting(10);
 			setCar_current_light(Lights.RED);
 			cont.setCar_green_time(0); // reseting the car timer
 			cont.setCar_traffic_active(false); // deactivating the traffic 			
+			break;
 		default:
 			setCar_current_light(Lights.RED);
 			cont.setCar_traffic_active(false);

@@ -48,7 +48,7 @@ public class ButonAImpl extends MinimalEObjectImpl.Container implements ButonA {
 	public void activate() {
 		ControllerImpl cont = new ControllerImpl();
 		cont.setButtonA_pressed(true);
-		cont.switch_lights_buttonA();
+		cont.switch_lights_buttonA();		
 	}
 
 	/**

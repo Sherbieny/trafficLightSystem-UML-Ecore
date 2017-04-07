@@ -4,21 +4,27 @@ package Systesh.impl;
 
 import Systesh.CarLight;
 import Systesh.Controller;
+import Systesh.Lights;
 import Systesh.PedLight;
 import Systesh.SysteshPackage;
 
 import java.lang.reflect.InvocationTargetException;
 
 import java.util.Collection;
+
+import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notification;
 
 import org.eclipse.emf.common.util.EList;
-
+import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.ecore.EClass;
-
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EOperation;
+import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
+import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.util.EObjectResolvingEList;
 
 /**
@@ -398,7 +404,7 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	public int getTime() {
 		
 		TimerImpl t = new TimerImpl();	
-		int time = t.tick();
+		int time = t.tick_count;
 		return time;
 	}
 
@@ -409,15 +415,22 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	 */
 	public void switch_lights_buttonA() {		
 		//waiting(5);		
+		CarLightImpl cl = new CarLightImpl();
+		PedLightImpl pl = new PedLightImpl();
 		if(isButtonA_pressed() && isCar_traffic_active()){
 			
-			for (CarLight cl : carlight) {
-					cl.switch_car_light(); 
-				}
-			//car_green_time = 0;
-			for (PedLight pl : pedlight) {
+			
+			while(cl.getCar_current_light() != Lights.RED){
+			
+				cl.switch_car_light();
+			}
+			setCar_traffic_active(false);
+			while(pl.getPed_current_light() != Lights.GREEN){
+						
 				pl.switch_ped_light();
-			}		
+			}
+			setPed_traffic_active(true);
+					
 		}
 		setButtonA_pressed(false);
 		//all below are done in their respective classes
@@ -434,14 +447,21 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	 */
 	public void switch_lights_buttonB() {
 	//	waiting(5);
+		CarLightImpl cl = new CarLightImpl();
+		PedLightImpl pl = new PedLightImpl();
 		if(isButtonB_pressed() && isCar_traffic_active()){
-			for (CarLight cl : carlight) {
-					cl.switch_car_light(); 
-				}
-			//car_green_time = 0;
-			for (PedLight pl : pedlight) {
+			
+			while(cl.getCar_current_light() != Lights.RED){
+				
+				cl.switch_car_light();
+			}
+			setCar_traffic_active(false);
+			
+			while(pl.getPed_current_light() != Lights.GREEN){
+						
 				pl.switch_ped_light();
-			}		
+			}
+			setPed_traffic_active(true);
 		}
 		setButtonB_pressed(false);
 		//all below are done in their respective classes

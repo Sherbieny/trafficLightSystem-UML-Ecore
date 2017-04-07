@@ -91,7 +91,9 @@ public class ControllerTest extends TestCase {
 		setFixture(SysteshFactory.eINSTANCE.createController());
 		getFixture().setCar_traffic_active(true);
 		getFixture().setPed_traffic_active(false);
-		getFixture().timer_reset();
+		//getFixture().timer_reset();
+		getFixture().setButtonA_pressed(true);
+		getFixture().setButtonB_pressed(true);
 		
 		CarLight cl1 = SysteshFactory.eINSTANCE.createCarLight();
 		CarLight cl2 = SysteshFactory.eINSTANCE.createCarLight();
@@ -142,7 +144,7 @@ public class ControllerTest extends TestCase {
 		getFixture().switch_lights_buttonA();
 		
 		//getFixture().isCar_traffic_active() || !getFixture().isPed_traffic_active() ||
-		if(getFixture().isCar_traffic_active() ||current_time == start_time){
+		if(getFixture().isCar_traffic_active() || current_time == start_time){
 			fail();
 		}
 		
@@ -180,9 +182,11 @@ public class ControllerTest extends TestCase {
 	 * @see Systesh.Controller#timer_reset()
 	 * @generated not
 	 */
-	public void testTimer_reset() {
-		setFixture(SysteshFactory.eINSTANCE.createController());
+	public void testTimer_reset() {		
 		getFixture().timer_reset();
+		if(getFixture().getTime() != 0){
+			fail();
+		}
 	}
 
 } //ControllerTest

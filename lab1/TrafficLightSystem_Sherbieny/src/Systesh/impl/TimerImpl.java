@@ -60,8 +60,7 @@ public class TimerImpl extends MinimalEObjectImpl.Container implements Timer {
 	 * @generated not
 	 */
 	public void timer_reset() {
-		ControllerImpl cont = new ControllerImpl();
-		cont.time = 0;
+		tick_count = 0;
 	}
 
 	/**

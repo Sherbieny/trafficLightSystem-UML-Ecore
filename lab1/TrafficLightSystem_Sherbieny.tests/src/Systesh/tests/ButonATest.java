@@ -5,6 +5,7 @@ package Systesh.tests;
 import Systesh.ButonA;
 import Systesh.CarLight;
 import Systesh.Controller;
+import Systesh.Lights;
 import Systesh.PedLight;
 import Systesh.SysteshFactory;
 
@@ -82,22 +83,7 @@ public class ButonATest extends TestCase {
 	@Override
 	protected void setUp() throws Exception {
 		setFixture(SysteshFactory.eINSTANCE.createButonA());	
-		
-		Controller c = SysteshFactory.eINSTANCE.createController();
-		
-
-		CarLight cl1 = SysteshFactory.eINSTANCE.createCarLight();
-		CarLight cl2 = SysteshFactory.eINSTANCE.createCarLight();
-		c.getCarlight().add(cl1);
-		c.getCarlight().add(cl2);
-		
-		PedLight pl1 = SysteshFactory.eINSTANCE.createPedLight();
-		PedLight pl2 = SysteshFactory.eINSTANCE.createPedLight();
-		c.getPedlight().add(pl1);
-		c.getPedlight().add(pl2);
-		
-		c.setButtonA_pressed(false);
-		
+				
 	}
 
 	/**
@@ -119,7 +105,11 @@ public class ButonATest extends TestCase {
 	 * @generated not
 	 */
 	public void testActivate() {		
+
+				
 		getFixture().activate();
+		
+		
 	}
 
 } //ButonATest

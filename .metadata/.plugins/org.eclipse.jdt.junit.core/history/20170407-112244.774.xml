@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ModelAllTests" project="TrafficLightSystem_Sherbieny.tests" tests="9" started="9" failures="0" errors="0" ignored="0">
+  <testsuite name="Model Tests" time="0.29">
+    <testsuite name="Systesh Tests" time="0.29">
+      <testsuite name="Systesh.tests.ButonATest" time="0.259">
+        <testcase name="testActivate" classname="Systesh.tests.ButonATest" time="0.259"/>
+      </testsuite>
+      <testsuite name="Systesh.tests.ControllerTest" time="0.026">
+        <testcase name="testSwitch_lights_buttonA" classname="Systesh.tests.ControllerTest" time="0.022"/>
+        <testcase name="testSwitch_lights_buttonB" classname="Systesh.tests.ControllerTest" time="0.002"/>
+        <testcase name="testTimer_reset" classname="Systesh.tests.ControllerTest" time="0.001"/>
+      </testsuite>
+      <testsuite name="Systesh.tests.PedLightTest" time="0.002">
+        <testcase name="testSwitch_ped_light" classname="Systesh.tests.PedLightTest" time="0.002"/>
+      </testsuite>
+      <testsuite name="Systesh.tests.CarLightTest" time="0.0">
+        <testcase name="testSwitch_car_light" classname="Systesh.tests.CarLightTest" time="0.0"/>
+      </testsuite>
+      <testsuite name="Systesh.tests.TimerTest" time="0.001">
+        <testcase name="testTick" classname="Systesh.tests.TimerTest" time="0.001"/>
+        <testcase name="testTimer_reset" classname="Systesh.tests.TimerTest" time="0.0"/>
+      </testsuite>
+      <testsuite name="Systesh.tests.ButtonBTest" time="0.002">
+        <testcase name="testActivate" classname="Systesh.tests.ButtonBTest" time="0.002"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

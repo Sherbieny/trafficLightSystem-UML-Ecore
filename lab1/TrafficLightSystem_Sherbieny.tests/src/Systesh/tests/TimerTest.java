@@ -113,13 +113,23 @@ public class TimerTest extends TestCase {
 	/**
 	 * Tests the '{@link Systesh.Timer#timer_reset() <em>Timer reset</em>}' operation.
 	 * <!-- begin-user-doc -->
+	 * Test case: we test the current time after reset by calling the tick() function multiple times to increment time,
+	 * we then call the timer_reset function to reset time, we then call tick() again and it should return 1 to insure that time was reset to 0;  
 	 * <!-- end-user-doc -->
 	 * @see Systesh.Timer#timer_reset()
 	 * @generated not
 	 */
 	public void testTimer_reset() {
 		setFixture(SysteshFactory.eINSTANCE.createTimer());
+		getFixture().tick();
+		getFixture().tick();
+		getFixture().tick();
+		getFixture().tick();
 		getFixture().timer_reset();
+		
+		if(getFixture().tick() != 1){
+			fail();
+		}
 	}
 
 } //TimerTest
