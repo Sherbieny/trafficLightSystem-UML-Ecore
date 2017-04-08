@@ -100,7 +100,7 @@ public class ButtonBTest extends TestCase {
 	 * @generated not
 	 */
 	public void testActivate() {
-		setFixture(SysteshFactory.eINSTANCE.createButtonB());
+		
 		getFixture().activate();
 	}
 

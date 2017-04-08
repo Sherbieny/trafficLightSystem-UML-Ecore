@@ -100,16 +100,16 @@ public class ButonATest extends TestCase {
 	/**
 	 * Tests the '{@link Systesh.ButonA#activate() <em>Activate</em>}' operation.
 	 * <!-- begin-user-doc -->
+	 * This simulates the activation of the button when a pedestrian pushes it. It call functions sequentially to switch the lights
+	 * I could not think of way to test this activation method since there is not button variables changed, it call controller methods only.
 	 * <!-- end-user-doc -->
 	 * @see Systesh.ButonA#activate()
 	 * @generated not
 	 */
 	public void testActivate() {		
-
-				
+								
 		getFixture().activate();
-		
-		
+				
 	}
 
 } //ButonATest

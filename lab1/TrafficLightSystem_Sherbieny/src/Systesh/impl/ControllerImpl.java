@@ -403,8 +403,6 @@ public class ControllerImpl extends MinimalEObjectImpl.Container implements Cont
 	 */
 	public int getTime() {
 		
-		TimerImpl t = new TimerImpl();	
-		int time = t.tick_count;
 		return time;
 	}
 

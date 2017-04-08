@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="Systesh.PedLight"/>
+<fullyQualifiedTypeName name="Systesh.CarLight"/>
+<fullyQualifiedTypeName name="Systesh.impl.CarLightImpl"/>
+<fullyQualifiedTypeName name="Systesh.impl.PedLightImpl"/>
+<fullyQualifiedTypeName name="Systesh.Lights"/>
+</qualifiedTypeNameHistroy>

@@ -98,7 +98,7 @@ public class TimerTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see Systesh.Timer#Tick()
-	 * @generated
+	 * @generated not
 	 */
 	public void testTick() {
 		int x = getFixture().tick();
